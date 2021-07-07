@@ -1,5 +1,5 @@
 'use strict'
-
+// 为啥用gulp打包styles
 const { series, src, dest } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
@@ -14,10 +14,10 @@ function compile () {
     }))
     .pipe(dest('../dist/lib/'))
 }
-
+// 拷贝字体文件
 function copyfont () {
   return src('../styles/resources/**')
-    .pipe(cssmin())
+    .pipe(cssmin()) // 可以压缩字体？
     .pipe(dest('../dist/lib/resources/'))
 }
 

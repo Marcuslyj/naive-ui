@@ -8,7 +8,8 @@
     "demo": "cross-env NODE_ENV=development & gulp --gulpfile build/gulpfile.js build & webpack-dev-server --config build/webpack.demo.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js",
     "serve": "npm run dev",
-    "test": "cross-env NODE_ENV=development BABEL_ENV=test karma start test/unit/karma.conf.js"
+    "test": "cross-env NODE_ENV=development BABEL_ENV=test karma start test/unit/karma.conf.js",
+    "eslint": "eslint --ext .js,.vue ../naive-ui --fix"
   },
   "author": "",
   "license": "ISC",
