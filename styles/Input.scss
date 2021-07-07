@@ -1,0 +1,38 @@
+@import './mixins/mixins.scss';
+@import './theme/default.scss';
+
+@include b(input) {
+  .inner-input {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    outline: none;
+    background-color: #6F768B;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-family: $default-font-family;
+    width: 100%;
+    caret-color: #63E2B7;
+    &::placeholder {
+      color: rgba(255, 255, 255, .4);
+      opacity: 1;
+    }
+  }
+  .inner-textarea {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    outline: none;
+    background-color: #6F768B;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-family: $default-font-family;
+    width: 100%;
+    resize: vertical;
+    caret-color: #63E2B7;
+  }
+}

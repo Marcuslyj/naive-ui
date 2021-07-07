@@ -28,6 +28,20 @@
       <router-link to="/n-round-button">
         圆按钮 / n-round-button
       </router-link>
+      <br>
+      <router-link to="/n-switch">
+        开关 / n-switch
+      </router-link><br>
+      <router-link to="/n-table">
+        表格 / n-table
+      </router-link><br>
+      <router-link to="/n-input">
+        输入 / n-input
+      </router-link>
+      <br>
+      <router-link to="/n-dropdown">
+        下拉框 / n-dropdown
+      </router-link>
     </div>
   </div>
 </template>

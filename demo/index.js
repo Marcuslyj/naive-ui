@@ -13,6 +13,9 @@ import MasonryGroup from 'packages/common/MasonryGroup'
 import Table from 'packages/common/Table'
 import Checkbox from 'packages/common/Checkbox'
 import RoundButton from 'packages/common/RoundButton'
+import Switch from '../packages/common/Switch'
+import Input from '../packages/common/Input'
+import Dropdown from '../packages/common/Dropdown'
 
 import ServiceCard from 'packages/nimbus/ServiceCard'
 import HomeLayout from 'packages/nimbus/HomeLayout'
@@ -25,6 +28,10 @@ import gradientTextDemo from './components/gradientTextDemo'
 import iconDemo from './components/iconDemo'
 import checkboxDemo from './components/checkboxDemo'
 import roundButtonDemo from './components/roundButtonDemo'
+import switchDemo from './components/switchDemo'
+import tableDemo from './components/tableDemo'
+import inputDemo from './components/inputDemo'
+import dropdownDemo from './components/dropdownDemo'
 import demo from './demo'
 
 Vue.use(VueRouter)
@@ -44,6 +51,9 @@ Table.install(Vue)
 WithMargin.install(Vue)
 Checkbox.install(Vue)
 RoundButton.install(Vue)
+Switch.install(Vue)
+Input.install(Vue)
+Dropdown.install(Vue)
 
 const routes = [
   { path: '/', component: demo },
@@ -52,7 +62,11 @@ const routes = [
   { path: '/n-gradient-text', component: gradientTextDemo },
   { path: '/n-icon', component: iconDemo },
   { path: '/n-checkbox', component: checkboxDemo },
-  { path: '/n-round-button', component: roundButtonDemo }
+  { path: '/n-round-button', component: roundButtonDemo },
+  { path: '/n-switch', component: switchDemo },
+  { path: '/n-table', component: tableDemo },
+  { path: '/n-input', component: inputDemo },
+  { path: '/n-dropdown', component: dropdownDemo }
 ]
 
 const router = new VueRouter({
